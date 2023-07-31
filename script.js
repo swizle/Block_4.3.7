@@ -11,6 +11,7 @@ searchInput.addEventListener('input', (e) => {
   autocompleteList.innerHTML = '';
 
   if (query === '') {
+    autocompleteList.style.display = 'none';
     return;
   }
 
