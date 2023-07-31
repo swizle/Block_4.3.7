@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #abb8c3;
+  color: #fff;
+}
+
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #263238;
+  border-radius: 10px;
+}
+
+.circle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 20px;
+  border-radius: 50%;
+}
+
+.circle-red {
+  left: 15px;
+  background-color: #ff5f5a;
+}
+
+.circle-yellow {
+  left: 35px;
+  background-color: #ffbe2e;
+}
+
+.circle-green {
+  left: 55px;
+  background-color: #2aca44;
+}
+
+.autocomplete {
+  position: relative;
+}
+
+#searchInput {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-bottom: #89ddff 2px solid;
+}
+
+#searchInput:focus-visible {
+  outline-color: #89ddff;
+}
+
+#autocompleteList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  display: none;
+  background-color: #263238;
+  border: 2px solid #82aaff;
+  border-radius: 10px;
+}
+
+#autocompleteList li {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  color: #ff5370;
+  background-color: #263238;
+  border: 5px solid #89ddff;
+  border-radius: 10px;
+}
+
+#repositoriesList {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  background-color: #263238;
+  border: 2px solid #89ddff;
+  border-radius: 10px;
+}
+
+.repository {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid #89ddff;
+}
+
+.repository:last-child{
+  border-bottom: none;
+}
+
+.repository img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.repository a {
+  text-decoration: none;
+  color: #c792ea
+}
+
+.repository span {
+  margin-left: 20px;
+}
+
+.repository a:hover {
+  text-decoration: underline;
+}
+
+.repository button {
+  margin-left: auto;
+  background-color: #ff5370;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
